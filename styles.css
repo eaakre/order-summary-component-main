@@ -1,0 +1,144 @@
+:root {
+    --font: 'Outfit', sans-serif;
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    font-family: var(--font);
+    background-color: var(--pale-blue);
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-color: var(--pale-blue );
+}
+
+.card {
+    width: min-content;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.top img{
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.summary {
+    margin: 15px auto;
+    width: 65%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 15px auto;
+}
+
+.plan img {
+    height: 40px;
+}
+
+.pricing {
+    margin-left: -70px;
+}
+
+.title {
+    font-weight: 700;
+}
+
+a {
+    color: var(--bright-blue);
+    font-size: 12px;
+}
+
+a:hover {
+    color: var(--Desaturated-blue);
+}
+
+a:active {
+    color: var(--pale-blue);
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proceed {
+    width: 75%;
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: var(--bright-blue);
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.cancel {
+    width: 75%;
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+    border: none;
+    border-radius: 10px;
+}
+
+.proceed:hover {
+    cursor: pointer;
+    background-color: var(--Dark-blue);
+    color: white;
+}
+
+.proceed:active {
+    background-color: var(--pale-blue);
+    color: var(--Dark-blue);
+}
+
+.cancel:hover {
+    cursor: pointer;
+    background-color: var(--pale-blue);
+}
+
+.cancel:active {
+    background-color: var(--Very-pale-blue);
+}
+
